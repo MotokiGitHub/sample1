@@ -3,10 +3,8 @@ Write-Host "** ComputerName:" $args[0]
 Write-Host "** Default Region:" $args[1]
 
 ## コンピュータ名の変更(強制)
-
+gci . 
 Rename-Computer -NewName $args[0] -Force
-
-
 
 ## AWSデフォルトリージョンの設定
 
